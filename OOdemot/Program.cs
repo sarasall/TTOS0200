@@ -1,7 +1,10 @@
-﻿using JAMK.IT; //helpottaa meidän tekemien luokkien löytämistä
+﻿// TTOS200 Olio-ohjelmointi viikkotehtävät
+// Sara Sallinen
+
+using JAMK.IT; //helpottaa meidän tekemien luokkien löytämistä
 using System;
 
-namespace OOdemot
+namespace JAMK.IT
 {
   class Program
   {
