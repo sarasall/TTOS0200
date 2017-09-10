@@ -11,22 +11,26 @@ namespace Labrat
     {
         public static void Exercise1()
         {
-            int luku = 0;
+            int number = 0;
 
             Console.WriteLine("Anna luku: ");
-            luku = int.Parse(Console.ReadLine());
+            number = int.Parse(Console.ReadLine());
 
-            if (luku == 1)
+            if (number == 1)
             {
                 Console.WriteLine("Annoit luvun yksi.");
             }
-            if (luku == 2)
+            if (number == 2)
             {
                 Console.WriteLine("Annoit luvun kaksi. ");
             }
-            if (luku == 3)
+            if (number == 3)
             {
                 Console.WriteLine("Annoit luvun kolme.");
+            }
+            if (number < 1 || number > 3)
+            {
+                Console.WriteLine("Joku muu luku");
             }
         }
     }

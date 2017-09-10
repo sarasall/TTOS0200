@@ -43,6 +43,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Lab01.cs" />
+    <Compile Include="Lab02.cs" />
+    <Compile Include="Lab03.cs" />
+    <Compile Include="Lab04.cs" />
+    <Compile Include="Lab05.cs" />
+    <Compile Include="Lab06.cs" />
+    <Compile Include="Lab07.cs" />
+    <Compile Include="Lab08.cs" />
+    <Compile Include="Lab09.cs" />
+    <Compile Include="Lab10.cs" />
+    <Compile Include="Lab11.cs" />
+    <Compile Include="Lab12.cs" />
+    <Compile Include="Lab13.cs" />
+    <Compile Include="Lab14.cs" />
+    <Compile Include="Lab15.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
