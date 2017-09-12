@@ -24,7 +24,11 @@ namespace Labrat
             //Lab12.Exercise12();
             //Lab13.Exercise13();
             //Lab14.Exercise14();
-            Lab15.Exercise15();
+            //Lab15.Exercise15();
+            //Lab16.Exercise16();
+            //Lab17.Exercise17();
+            //Lab18.Exercise18();
+            Lab19.Exercise19();
         }
     }
 }
