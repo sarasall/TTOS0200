@@ -48,7 +48,7 @@ namespace Labrat2
                 Console.WriteLine("Ilmoita kierrosluvut: ");
                 pesukone.Kierrokset = int.Parse(Console.ReadLine());
 
-                Console.WriteLine("Käynnistetäänkö pesukone? Valitste k/e. "); 
+                Console.WriteLine("Käynnistetäänkö pesukone? Valitse k/e. "); 
                 valinta = Console.ReadLine();
 
                 if (valinta == "k")
