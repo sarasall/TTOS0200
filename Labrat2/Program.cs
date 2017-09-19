@@ -11,8 +11,10 @@ namespace Labrat2
         static void Main(string[] args)
         {
 
-            //TestaaKiuas(); // Testataan kiukaan toimintaa testaus-metodilla
-            TestaaPesukone(); // Testataan pesukone
+            //TestaaKiuas(); 
+            //TestaaPesukone(); 
+            //TestaaTelevisio();
+            TestaaVehicle();
         }
         
         static void TestaaKiuas()
@@ -75,9 +77,43 @@ namespace Labrat2
             pesukone.Ohjelma = "Kirjopesu ";
             Console.WriteLine("Pesuohjelman 2. nimi: " + pesukone.Ohjelma);
             pesukone.Ohjelma = "Siliävät vaatteet";
+
             Console.WriteLine("Pesuohjelman 3. nimi: " + pesukone.Ohjelma);
 
             Console.WriteLine("Tarkistus onko vedentulo päällä: " + pesukone.VesiPaalla); // Oletuksena määritelty kiinni, testataan
+        }
+        static void TestaaTelevisio()
+        {
+            Televisio televisio = new Televisio(); // Luodaan uusi olio
+
+            televisio.OnkoPaalla = true; // Televisio päälle
+            televisio.Kanava = 7;
+            televisio.Aanenvoimakkuus = 20;  
+
+            Console.WriteLine("Onko televisio päällä? = " + televisio.OnkoPaalla);
+            Console.WriteLine("Katsot kanavaa: " + televisio.Kanava);
+            Console.WriteLine("Valitse äänenvoimakkuus 1-50: " );
+            televisio.Aanenvoimakkuus = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("\nÄänenvoimakkuus on: " + televisio.Aanenvoimakkuus);
+        }
+        static void TestaaVehicle()
+        {
+            Vehicle vehicle = new Vehicle("Lada", 80, 4); // konstruktorin ansioista voi suoraan määritellä arvot
+            Vehicle vehicle2 = new Vehicle("Volvo", 120, 4);
+            Vehicle vehicle3 = new Vehicle("Saab", 100, 4);
+
+                vehicle.PrintData();
+                vehicle.ToString();
+
+                Console.WriteLine();
+                vehicle2.PrintData();
+                vehicle2.ToString();
+
+                Console.WriteLine();
+                vehicle3.PrintData();
+                vehicle3.ToString();
+                Console.WriteLine();
         }
     }
 }
