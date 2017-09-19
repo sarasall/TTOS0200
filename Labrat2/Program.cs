@@ -14,7 +14,8 @@ namespace Labrat2
             //TestaaKiuas(); 
             //TestaaPesukone(); 
             //TestaaTelevisio();
-            TestaaVehicle();
+            //TestaaVehicle();
+            TestaaCD();
         }
         
         static void TestaaKiuas()
@@ -22,7 +23,7 @@ namespace Labrat2
             Kiuas kiuas = new Kiuas(); // luodaan uusi kiuas-olio
 
             kiuas.OnkoPaalla = true; // Laitetaan kiuas päälle
-            kiuas.Lampotila = 100; // Laitetaan saunan lämpötila 80 asteeseen
+            kiuas.Lampotila = 100; // Laitetaan saunan lämpötila 100 asteeseen
             kiuas.Kosteus = 70; // Kosteustaso 70 
 
             Console.WriteLine("Onko kiuas päällä? = " + kiuas.OnkoPaalla);
@@ -114,6 +115,29 @@ namespace Labrat2
                 vehicle3.PrintData();
                 vehicle3.ToString();
                 Console.WriteLine();
+        }
+        static void TestaaCD()
+        {
+            // olioiden luonti
+            CD cd = new CD();
+            CD cd1 = new CD("Weak Fantasy", "05:23");
+            CD cd2 = new CD("Elan", "06:29");
+            CD cd3 = new CD("Yours Is an Empty Hope", "04:45");
+            CD cd4 = new CD("Our Decades in the Sun", "05:34");
+            CD cd5 = new CD("My Walden", "06:29");
+            CD cd6 = new CD("Endless Forms Most Beautiful", "06:03");
+
+            // Tulostetaan ominaisuuksien merkkijono
+            cd.TulostaOminaisuudet(); 
+            cd.ToString();
+
+            // Tulostetaan lyhennetty kappalelista
+            cd1.TulostaKappaleet();
+            cd2.TulostaKappaleet();
+            cd3.TulostaKappaleet();
+            cd4.TulostaKappaleet();
+            cd5.TulostaKappaleet();
+            cd6.TulostaKappaleet();
         }
     }
 }
