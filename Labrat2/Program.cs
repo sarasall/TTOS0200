@@ -63,10 +63,21 @@ namespace Labrat2
                 }
             } while (valinta != "k");
 
-            Console.WriteLine("\nValitsemasi pesuohjelman tiedot: ");
+            Console.WriteLine("\nPesuohjelman tiedot: ");
+            Console.WriteLine("------------------------");
             Console.WriteLine("Lampotila: " + pesukone.Lampotila + " celsiusta.");
-            Console.WriteLine("Kosteustaso: " + pesukone.Kierrokset);
+            Console.WriteLine("Kierrosten määrä: " + pesukone.Kierrokset);
 
+            // Testataan konstruktoreita
+
+            Console.WriteLine("Pesuohjelman 1. nimi: " + pesukone.Ohjelma); // tulostetaan oletus, eli peruspesu
+
+            pesukone.Ohjelma = "Kirjopesu ";
+            Console.WriteLine("Pesuohjelman 2. nimi: " + pesukone.Ohjelma);
+            pesukone.Ohjelma = "Siliävät vaatteet";
+            Console.WriteLine("Pesuohjelman 3. nimi: " + pesukone.Ohjelma);
+
+            Console.WriteLine("Tarkistus onko vedentulo päällä: " + pesukone.VesiPaalla); // Oletuksena määritelty kiinni, testataan
         }
     }
 }
