@@ -17,8 +17,6 @@ namespace Labrat3
             Console.WriteLine("\nSyötä merkkijono: ");
             syote = Console.ReadLine();
 
-            char viimeinen = syote.Last(); //otetaan viimeinen merkki merkkijonosta
-
                 if (syote.Contains('.')) // jos merkkijono sisältää pisteen, arvo on false
                 {
                     tulos = false;
