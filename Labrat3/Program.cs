@@ -11,11 +11,11 @@ namespace Labrat3
     {
         static void Main(string[] args)
         {
-            Labrat3.TestiPeti.TestaaMetodit();
+            //Labrat3.TestiPeti.TestaaMetodit();
             //Labrat3.TestaaHissi.TestaaToiminta();
             //Labrat3.TestaaVahvistin.TestaaToiminta();
+            Labrat3.TestaaLuokka.TestaaToiminta();
+
         }
-
-
     }
 }
