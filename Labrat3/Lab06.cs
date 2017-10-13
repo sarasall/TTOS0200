@@ -44,7 +44,7 @@ namespace Labrat3
             Taajuus = taajuus;
             Aanenvoimakkuus = voimakkuus;
         }
-        public string ToString()
+        public override string ToString()
         {
             return " " + Taajuus + " " + Aanenvoimakkuus;
         }

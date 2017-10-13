@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace JAMK.IT
 {
-    public class miniAsio
+    class miniAsio
     {
-
     }
     public class Opiskelija
     {
@@ -52,7 +51,7 @@ namespace JAMK.IT
         {
             // luodaan List-tyyppinen lista oppilaista
             List<Opiskelija> opiskelijat = new List<Opiskelija>();
-            
+
             // Testin vuoksi erilaisia tapoja lisätä olioita listaan
             Opiskelija masa = new Opiskelija("Masa", "Niemi");
 
@@ -72,7 +71,7 @@ namespace JAMK.IT
             Console.WriteLine("Anna numero väliltä 1 - {0}", opiskelijat.Count);
             int i = int.Parse(Console.ReadLine());
 
-            if (i-1 < opiskelijat.Count)
+            if (i - 1 < opiskelijat.Count)
                 Console.WriteLine("MiniASIOn {0} opiskelija on {1}", i, opiskelijat[i - 1].ToString());
             else
                 Console.WriteLine("MiniASIOssa on vain {0} opiskelijaa.", opiskelijat.Count);
@@ -80,7 +79,7 @@ namespace JAMK.IT
             // Kaikkien opiskelijoiden tiedot
             Console.WriteLine("MiniASIOn kaikki opiskelijat: ");
 
-            foreach(var o in opiskelijat)
+            foreach (var o in opiskelijat)
             {
                 Console.WriteLine(o.ToString());
             }
@@ -88,7 +87,7 @@ namespace JAMK.IT
             // Kaikkien opiskelijoiden tiedot aakkosjärjestyksessä sukunimen mukaan
             // Sortataan oliot Sukunimi-ominaisuuden mukaiseen järjestykseen
 
-            opiskelijat.Sort((x,y) => x.Sukunimi.CompareTo(y.Sukunimi));
+            opiskelijat.Sort((x, y) => x.Sukunimi.CompareTo(y.Sukunimi));
 
             Console.WriteLine("MiniASIOn kaikki opiskelijat sortattuna: ");
 
@@ -103,7 +102,7 @@ namespace JAMK.IT
 
             // tutkitaan onko listassa
             bool lippu = false; // apumuuttuja
-            foreach(Opiskelija o in opiskelijat)
+            foreach (Opiskelija o in opiskelijat)
             {
                 if (asioid == o.AsioID) // tarkistetaan yksi kerrallaan ja verrataan annettua ja listassa olevaa ID:tä
                 {

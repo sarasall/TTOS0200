@@ -10,7 +10,8 @@ namespace JAMK.IT
     {
         static void Main(string[] args)
         {
-            JAMK.IT.TestaaMiniASIO.Testaa();
+            //JAMK.IT.TestaaMiniASIO.Testaa();
+            JAMK.IT.TestaaCD.Testaa();
         }
     }
 }

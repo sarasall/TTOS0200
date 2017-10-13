@@ -39,7 +39,7 @@ namespace Labrat3
             Malli = malli;
             AkkuaJaljella = akku;
         }
-        public void TulostaTiedot()
+        public new void TulostaTiedot()
         {
             Console.WriteLine("Tuote on: " + Tuote);
             Console.WriteLine("Valmistettu/julkaistu vuonna: " + Vuosi);
@@ -61,7 +61,7 @@ namespace Labrat3
         {
             Ostettu = ostettu;
         }
-        public void TulostaTiedot()
+        public new void TulostaTiedot()
         {
             Console.WriteLine("\nTuote on: " + Tuote);
             Console.WriteLine("Valmistettu/julkaistu vuonna: " + Vuosi);

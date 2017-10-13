@@ -26,7 +26,7 @@ namespace Labrat2
             Console.WriteLine("Speed: " + Speed);
             Console.WriteLine("Tyres: " + Tyres);
         }
-        public string ToString()
+        public override string ToString()
         {
             string vehicleString = Name + " " + Speed + " " + Tyres + " wheels"; 
 

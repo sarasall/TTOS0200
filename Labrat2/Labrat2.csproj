@@ -7,7 +7,7 @@
     <ProjectGuid>{8BA63379-C34C-471C-BB36-E6D62F5DED66}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Labrat2</RootNamespace>
+    <RootNamespace>JAMK.IT</RootNamespace>
     <AssemblyName>Labrat2</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

@@ -50,7 +50,7 @@ namespace Labrat3
               VaihdeNimi = vaihde;
         }
 
-        public void TulostaTiedot()
+        public new void TulostaTiedot()
         {
                 Console.WriteLine("\nPyörän tiedot: ");
                 Console.WriteLine("Nimi: " + Nimi);
@@ -78,7 +78,7 @@ namespace Labrat3
             Paikat = paikat;
         }
 
-        public void TulostaTiedot()
+        public new void TulostaTiedot()
         {
             Console.WriteLine("\nPyörän tiedot: ");
             Console.WriteLine("Nimi: " + Nimi);

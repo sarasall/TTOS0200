@@ -50,12 +50,12 @@ namespace Labrat3
             Bonus = bonus;
         }
 
-        public void TulostaMetodi()
+        public new void TulostaMetodi()
         {
-            Console.WriteLine("\nPomo: "); 
+            Console.WriteLine("\nPomo: ");
             Console.WriteLine("Nimi:" + Nimi);
             Console.WriteLine("Ammatti: " + Ammatti);
-            Console.WriteLine("Palkka: " + Palkka); 
+            Console.WriteLine("Palkka: " + Palkka);
             Console.WriteLine("Auto: " + Auto);
             Console.WriteLine("Bonus: " + Bonus);
         }

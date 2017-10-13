@@ -39,7 +39,7 @@ namespace Labrat3
                 Malli = malli;
                 TakuuVoimassa = takuu; 
             }
-            public void TulostaTiedot()
+            public new void TulostaTiedot()
             {
                 Console.WriteLine("\nTuote on: " + Tuote);
                 Console.WriteLine("Tuottetta käytetään: " + Tarkoitus);
@@ -61,7 +61,7 @@ namespace Labrat3
             {
                 Ostettu = ostettu;
             }
-            public void TulostaTiedot()
+            public new void TulostaTiedot()
             {
                 Console.WriteLine("\nTuote on: " + Tuote);
                 Console.WriteLine("Tuottetta käytetään: " + Tarkoitus);
