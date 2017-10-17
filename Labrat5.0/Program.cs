@@ -11,7 +11,9 @@ namespace JAMK.IT
         static void Main(string[] args)
         {
             //JAMK.IT.TestaaMiniASIO.Testaa();
-            JAMK.IT.TestaaCD.Testaa();
+            //JAMK.IT.TestaaCD.Testaa();
+            //JAMK.IT.TestaaKortit.Testaa();
+            JAMK.IT.TestaaJoukkue.Testaa();
         }
     }
 }

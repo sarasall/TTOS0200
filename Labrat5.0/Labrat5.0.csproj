@@ -44,7 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CD.cs" />
+    <Compile Include="Kortti.cs" />
     <Compile Include="miniAsio.cs" />
+    <Compile Include="Pelaaja.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
