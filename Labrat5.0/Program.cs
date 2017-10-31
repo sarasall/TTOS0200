@@ -12,8 +12,8 @@ namespace JAMK.IT
         {
             //JAMK.IT.TestaaMiniASIO.Testaa();
             //JAMK.IT.TestaaCD.Testaa();
-            //JAMK.IT.TestaaKortit.Testaa();
-            JAMK.IT.TestaaJoukkue.Testaa();
+            JAMK.IT.TestaaKortit.Testaa();
+            //JAMK.IT.TestaaJoukkue.Testaa();
         }
     }
 }

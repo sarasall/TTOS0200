@@ -72,8 +72,8 @@ namespace JAMK.IT
             while(yhtKortteja > 0)
             {
                 var index = randompakka.Next(yhtKortteja+1); //  arvotaan randomnro 1-52 indexiksi
-                var tmp = korttipakka[index]; // swapataan korttien paikkoja
-
+                var tmp = korttipakka[index]; // Lisätään arvottu muuttuja väliaikaiseen muuttujaans
+                // swapataan korttien paikkoja
                 korttipakka[index] = korttipakka[yhtKortteja];
                 korttipakka[yhtKortteja] = tmp;
                 yhtKortteja--;

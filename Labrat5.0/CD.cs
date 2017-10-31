@@ -34,7 +34,7 @@ namespace JAMK.IT
             Console.WriteLine("- Esittäjä: " + Artisti);
             Console.WriteLine("- Levyn nimi: " + LevynNimi);
         }
-        public string ToString()
+        public override string ToString()
         {
             return " " + Artisti + " " + LevynNimi;
         }
