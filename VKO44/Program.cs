@@ -61,7 +61,7 @@ namespace JAMK.IT
             try
             {
                 //Luetaan tiedosto läpi rivi kerrallaan
-                int counter = 0;
+                int counter = 1;
                 string line;
                 System.IO.StreamReader stream = new System.IO.StreamReader(@"d:\K8500\tilasto2017.txt");
                 while((line = stream.ReadLine()) != null)
