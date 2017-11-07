@@ -11,35 +11,40 @@ namespace JAMK.IT.Tests
     [TestClass()]
     public class ArrayCalcsTests
     {
-        [TestMethod()]
-        public void ArrayCalcsTest()
-        {
-
-            Assert.Fail();
-        }
+        double[] array = { 1.0, 2.0, 3.3, 5.5, 6.3, -4.5, 12.0 };      
+        double expected;
+        double actual;
 
         [TestMethod()]
         public void SumTest()
         {
-            Assert.Fail();
+            expected = 25.60;// Arrange
+            actual = ArrayCalcs.Sum(array); // Actual
+            Assert.AreEqual(expected, actual); // Assert
         }
 
         [TestMethod()]
         public void AverageTest()
         {
-            Assert.Fail();
+            expected = 3.66;// Arrange
+            actual = ArrayCalcs.Average(array); // Actual
+            Assert.AreEqual(expected, actual); // Assert
         }
 
         [TestMethod()]
         public void MinTest()
         {
-            Assert.Fail();
+            expected = -4.50; // Arrange
+            actual = ArrayCalcs.Min(array); // Actual
+            Assert.AreEqual(expected, actual); // Assert
         }
 
         [TestMethod()]
         public void MaxTest()
         {
-            Assert.Fail();
+            expected = 12.00;// Arrange
+            actual = ArrayCalcs.Max(array); // Actual
+            Assert.AreEqual(expected, actual); // Assert
         }
     }
 }

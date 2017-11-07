@@ -34,7 +34,6 @@ namespace JAMK.IT
             try
             {
                 double[] array = { 1.0, 2.0, 3.3, 5.5, 6.3, -4.5, 12.0 };
-                //double[] array = { };
 
                 Console.WriteLine(String.Format("{0:Sum: 0.00}", ArrayCalcs.Sum(array)));
                 Console.WriteLine(String.Format("{0:Average: 0.00}", ArrayCalcs.Average(array)));
