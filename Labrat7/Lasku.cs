@@ -29,7 +29,7 @@ namespace JAMK.IT
     public class LaskuLista
     {
         public string Asiakas { get; set; }
-        public List<Lasku> laskulista { get; }
+        public List<Lasku> laskulista { get; set;}
 
         public LaskuLista()
         {
