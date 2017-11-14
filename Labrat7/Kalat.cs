@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace JAMK.IT
 {
-    public class Kalat
+    public class Kala
     {
         public string Laji { get; set; }
         public double Pituus { get; set; }
@@ -14,7 +14,7 @@ namespace JAMK.IT
         public string PaikanNimi { get; set; }
         public string Paikka { get; set; }
 
-        public Kalat (string laji, double pituus, double paino, string nimi, string paikka)
+        public Kala (string laji, double pituus, double paino, string nimi, string paikka)
         {
             Laji = laji;
             Pituus = pituus;
@@ -27,17 +27,17 @@ namespace JAMK.IT
             return "Laji: " + Laji + " " + Pituus + " " + Paino + " kg." + "\nPaikka: " + PaikanNimi + " \nSijainti: " + Paikka;
         }
     }
-    public class Kalastajat
+    public class Kalastaja
     {
         public string Nimi { get; set; }
         public string PuhNum { get; set; }
-        public List<Kalat> kalalista { get; }
+        public List<Kala> kalalista { get; set; }
 
-        public Kalastajat (string nimi, string puhnum)
+        public Kalastaja (string nimi, string puhnum)
         {
             Nimi = nimi;
             PuhNum = puhnum;
-            kalalista = new List<Kalat>();
+            kalalista = new List<Kala>();
         }
         public override string ToString()
         {
@@ -51,20 +51,20 @@ namespace JAMK.IT
         {
             try
             {
-                Kalastajat kalastajaKirsi = new Kalastajat("Kirsi Kernel", "020-5555555");
+                Kalastaja kalastajaKirsi = new Kalastaja("Kirsi Kernel", "020-5555555");
                 Console.WriteLine("Uusi kalastaja lisätty rekisteriin: ");
                 Console.WriteLine(kalastajaKirsi.ToString());
 
                 Console.WriteLine("\nKalastaja: {0} sai uuden kalan", kalastajaKirsi.Nimi);
-                kalastajaKirsi.kalalista.Add(new Kalat("Ahven", 190, 5.0, "Jyväsjärvi", "Jyväskylä"));
+                kalastajaKirsi.kalalista.Add(new Kala("Ahven", 190, 5.0, "Jyväsjärvi", "Jyväskylä"));
                 Console.WriteLine(kalastajaKirsi.kalalista[0].ToString());
 
                 Console.WriteLine("\nKalastaja: {0} sai uuden kalan", kalastajaKirsi.Nimi);
-                kalastajaKirsi.kalalista.Add(new Kalat("Särki", 90, 2.5, "Oulujoki", "Oulu"));
+                kalastajaKirsi.kalalista.Add(new Kala("Särki", 90, 2.5, "Oulujoki", "Oulu"));
                 Console.WriteLine(kalastajaKirsi.kalalista[1].ToString());
 
                 Console.WriteLine("\nKaikki kalat rekisterissä:");
-                foreach (Kalat kala in kalastajaKirsi.kalalista)
+                foreach (Kala kala in kalastajaKirsi.kalalista)
                 {
                     Console.WriteLine(kala.ToString());
                 }
@@ -72,7 +72,7 @@ namespace JAMK.IT
                 kalastajaKirsi.kalalista.Sort((x, y) => y.Paino.CompareTo(x.Paino)); // Sortataan painavemmasta kevyempään kalaan
 
                 Console.WriteLine("\nJärjestetyt kalat rekisterissä:");
-                foreach (Kalat kala in kalastajaKirsi.kalalista)
+                foreach (Kala kala in kalastajaKirsi.kalalista)
                 {
                     Console.WriteLine(kala.ToString());
                 }
