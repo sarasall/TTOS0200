@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello", "Hello\Hello.csproj", "{43D3A9D9-D831-46CD-BE33-1DE6770DB406}"
 EndProject
@@ -34,6 +34,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labrat8.2", "Labrat8.2\Labrat8.2.csproj", "{3AE60A5C-132F-4E60-9718-FA1C5BF44169}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VKO46Autotalli", "VKO46Autotalli\VKO46Autotalli.csproj", "{78F98D2C-A992-47AF-9FB4-E5E5E26CD56C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labrat9.1", "Labrat9.1\Labrat9.1.csproj", "{BBC5690E-889C-4155-9015-B3EC904C4471}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labrat9.2", "Labrat9.2\Labrat9.2.csproj", "{52C20BB2-6731-4E11-8BDD-B62369F2335D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labrat9.3", "Labrat9.3\Labrat9.3.csproj", "{BDB10653-9177-426A-B24B-AB9310E28B91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +111,18 @@ Global
 		{78F98D2C-A992-47AF-9FB4-E5E5E26CD56C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78F98D2C-A992-47AF-9FB4-E5E5E26CD56C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78F98D2C-A992-47AF-9FB4-E5E5E26CD56C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBC5690E-889C-4155-9015-B3EC904C4471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBC5690E-889C-4155-9015-B3EC904C4471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBC5690E-889C-4155-9015-B3EC904C4471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBC5690E-889C-4155-9015-B3EC904C4471}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52C20BB2-6731-4E11-8BDD-B62369F2335D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52C20BB2-6731-4E11-8BDD-B62369F2335D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52C20BB2-6731-4E11-8BDD-B62369F2335D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52C20BB2-6731-4E11-8BDD-B62369F2335D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDB10653-9177-426A-B24B-AB9310E28B91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDB10653-9177-426A-B24B-AB9310E28B91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDB10653-9177-426A-B24B-AB9310E28B91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDB10653-9177-426A-B24B-AB9310E28B91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

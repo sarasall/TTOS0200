@@ -27,16 +27,17 @@ namespace VKO46Autotalli
         {
             // Tänne koodi, mikä suoritetaan ikkunen avauksen luonnissa
             InitializeComponent();
-            NaytaKuva("autotalli.png");
             // Pyydetään BL-kerrokselta autot ja näytetään ne käyttäjälle
             autot = Autotalli.HaeAutot(); //kutsutaan staattisen Autotalli-luokan staattista metodia
-            // Vaihtoehto 1 käsin koodaamalla
+            NaytaKuva("autotalli.png");
+            
+            // Vaihtoehto 1 käsin koodaamalla, kaikki automerkit comboboxiin
             List<string> merkit = new List<string>();
             merkit.Add("Audi");
             merkit.Add("Saab");
             merkit.Add("Volvo");
            
-            // Vaihtoehto 2: Kysytään LiNG:lla datasta eri automerkit
+            // Vaihtoehto 2: Kysytään LINQ:lla datasta eri automerkit
             var result = autot.Select(m => m.Merkki).Distinct();
             cmbAutot.ItemsSource = result;
         }
@@ -55,7 +56,7 @@ namespace VKO46Autotalli
                     url = "puuttuu.png";
                 }
                 url = polku + url; // Lisätään kuvatiedostojen vakiopolku
-                                   // Kuvan näyttäminen
+                // Kuvan näyttäminen
                 BitmapImage pic = new BitmapImage(); // Luodaan olio
                 pic.BeginInit(); //Alustetaan
                 pic.UriSource = new Uri(url); // Muutetaan url resurssiosoitteeksi
@@ -90,7 +91,7 @@ namespace VKO46Autotalli
 
         private void cmbAutot_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            // Suodatetaan DataGridiin näkyviin vai valittu automerkki
+            // Suodatetaan DataGridiin näkyviin vain valittu automerkki
             string merkki = cmbAutot.SelectedValue.ToString();
             var result = autot.Where(m => m.Merkki.Contains(merkki));
             dgAutot.ItemsSource = result;
