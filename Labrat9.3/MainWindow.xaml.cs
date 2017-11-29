@@ -30,7 +30,7 @@ namespace Labrat9._3
 
         private void bValitseRivit_Click(object sender, RoutedEventArgs e)
         {
-            int rivit = int.Parse(txtbRivienLkm.Text);
+            int rivit = int.Parse(txtbRivienLkm.Text); 
             string value = cmbValinta.SelectedValue.ToString();
             string tulos = "";
             
